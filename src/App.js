@@ -127,7 +127,7 @@ function App() {
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setFeedback(`Minting your deOTC NFT Mint...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(mintAmount)
@@ -145,7 +145,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the deOTC NFT Mint is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -205,7 +205,7 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <StyledImg alt={"deOTC NFT example"} src={"/config/images/example.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -251,7 +251,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  You can still find {CONFIG.NFT_NAME} on
+                  You can still find deOTC NFT Mint on
                 </s.TextDescription>
                 <s.SpacerSmall />
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
@@ -263,7 +263,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  1 deOTC NFT Mint costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
@@ -372,7 +372,7 @@ function App() {
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
-              alt={"example"}
+              alt={"deOTC NFT example"}
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
             />
