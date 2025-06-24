@@ -6,13 +6,13 @@
     "SYMBOL": "tBNB",
     "ID": 97
   },
-  "NFT_NAME": "OTC NFT MINT",
-  "SYMBOL": "OTC",
+  "NFT_NAME": "Premium NFT Collection",
+  "SYMBOL": "PNC",
   "MAX_SUPPLY": 1000,
   "WEI_COST": 50000000000000000,
   "DISPLAY_COST": 0.02,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
   "SHOW_BACKGROUND": true
 }
