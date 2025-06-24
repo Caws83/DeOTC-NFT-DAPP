@@ -205,7 +205,23 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"deOTC NFT example"} src={"/config/images/example.gif"} />
+            <video
+              src={"/config/images/example.gif.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                boxShadow: "0px 5px 11px 2px rgba(0, 0, 0, 0.7)",
+                border: "4px dashed var(--secondary)",
+                backgroundColor: "var(--accent)",
+                borderRadius: "100%",
+                width: 200,
+                maxWidth: "100%",
+                objectFit: "cover",
+              }}
+              alt="deOTC NFT example"
+            />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -371,10 +387,23 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"deOTC NFT example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
+            <video
+              src={"/config/images/example.gif.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                boxShadow: "0px 5px 11px 2px rgba(0, 0, 0, 0.7)",
+                border: "4px dashed var(--secondary)",
+                backgroundColor: "var(--accent)",
+                borderRadius: "100%",
+                width: 200,
+                maxWidth: "100%",
+                objectFit: "cover",
+                transform: "scaleX(-1)",
+              }}
+              alt="deOTC NFT example"
             />
           </s.Container>
         </ResponsiveWrapper>
